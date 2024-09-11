@@ -2,6 +2,7 @@ package TestPkg;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,6 +16,8 @@ public class RegisterTest {
 	@BeforeTest
 	public void setup()
 	{
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
 		driver=new ChromeDriver();
 	}
     
@@ -25,9 +28,9 @@ public class RegisterTest {
 	}
 	
 	@Test
-	public void testlogin() {
-		Register ob=new Register(driver);
-		ob.setvalues("qwerty@gmail.com","Qwerty123!","Qwerty123!");
-		ob.login();
+	public void testregister() throws Exception {
+		Register rtr=new Register(driver);
+		rtr.setvalues("cliyona@gmail.com","Qwerty123!","Qwerty123!");
+		rtr.login();
 	}
 }

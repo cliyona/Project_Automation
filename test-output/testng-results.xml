@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-09T12:31:13 IST" name="Default suite" finished-at="2024-08-09T12:31:41 IST" duration-ms="27735">
+  <suite started-at="2024-09-11T09:21:38 IST" name="Default suite" finished-at="2024-09-11T09:23:20 IST" duration-ms="102704">
     <groups>
     </groups>
-    <test started-at="2024-08-09T12:31:13 IST" name="Default test" finished-at="2024-08-09T12:31:41 IST" duration-ms="27735">
-      <class name="TestPkg.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPkg.RegisterTest@3270d194]" started-at="2024-08-09T12:31:13 IST" name="setup" finished-at="2024-08-09T12:31:15 IST" duration-ms="1477" status="PASS">
+    <test started-at="2024-09-11T09:21:38 IST" name="Default test" finished-at="2024-09-11T09:23:20 IST" duration-ms="102704">
+      <class name="TestPkg.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:21:38 IST" name="setup" finished-at="2024-09-11T09:21:41 IST" duration-ms="2944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="url()[pri:0, instance:TestPkg.RegisterTest@3270d194]" started-at="2024-08-09T12:31:15 IST" name="url" finished-at="2024-08-09T12:31:40 IST" duration-ms="25392" status="PASS">
+        <test-method is-config="true" signature="url()[pri:0, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:21:41 IST" name="url" finished-at="2024-09-11T09:22:04 IST" duration-ms="23360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method signature="testlogin()[pri:0, instance:TestPkg.RegisterTest@3270d194]" started-at="2024-08-09T12:31:40 IST" name="testlogin" finished-at="2024-08-09T12:31:41 IST" duration-ms="824" status="PASS">
+        <test-method signature="Home()[pri:0, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:22:04 IST" name="Home" finished-at="2024-09-11T09:22:32 IST" duration-ms="27849" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlogin -->
-      </class> <!-- TestPkg.RegisterTest -->
+        </test-method> <!-- Home -->
+        <test-method is-config="true" signature="url()[pri:0, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:22:32 IST" name="url" finished-at="2024-09-11T09:22:55 IST" duration-ms="23144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="TripIdeas()[pri:2, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:22:55 IST" name="TripIdeas" finished-at="2024-09-11T09:22:55 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TripIdeas -->
+        <test-method is-config="true" signature="url()[pri:0, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:22:55 IST" name="url" finished-at="2024-09-11T09:23:17 IST" duration-ms="21927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="TripMenus()[pri:3, instance:TestPkg.HomePageTest@4218d6a3]" started-at="2024-09-11T09:23:17 IST" name="TripMenus" finished-at="2024-09-11T09:23:20 IST" duration-ms="3160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TripMenus -->
+      </class> <!-- TestPkg.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

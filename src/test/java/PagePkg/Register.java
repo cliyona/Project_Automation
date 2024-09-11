@@ -1,11 +1,18 @@
 package PagePkg;
 
-import org.openqa.selenium.By;
+
+import java.io.File;
+
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//Page for registration
 public class Register {
 	
 	
@@ -29,11 +36,15 @@ public class Register {
 	
 	public void setvalues(String email,String password,String repeatpassword) {
 		wemail.sendKeys(email);
-		wpassword.sendKeys("password");
-		rpassword.sendKeys("repeatpassword");
+		wpassword.sendKeys(password);
+		rpassword.sendKeys(repeatpassword);
 	}
-	public void login()
+	public void login() throws Exception
 	{
+		//takes screenshot		
+		File scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(scr, new File("./ScreenShots//Register.png"));
 		wlogin.click();
+		
 	}
 }
